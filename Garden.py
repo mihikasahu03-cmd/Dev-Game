@@ -35,10 +35,10 @@ def on_mouse_down(pos):
          if butterflies[next_butterflies].collidepoint(pos):
             if next_butterflies:
                  lines.append((butterflies[next_butterflies -1].pos,butterflies[next_butterflies].pos))
-                 next_butterflies = next_butterflies +1
-            else:
-                 lines = []
-                 next_butterflies = 0
+            next_butterflies = next_butterflies +1
+         else:
+            lines = []
+            next_butterflies = 0
 
 
 pgzrun.go()
